@@ -1,0 +1,3 @@
+dtale
+pandas
+pandas_profiling
