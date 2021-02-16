@@ -11,9 +11,9 @@ D.pp = ProfileReport  # pandas_profiling.ProfileReport
 
 def _style_base(df, r=50, c=50, na_rep="-"):
     if r > len(df):
-        _df = df.iloc[:, :c].copy()
+        _df = df.iloc[:, :c]
     else:
-        _df = df.iloc[np.r_[0 : int(r / 2), -int(r / 2) : 0], :c].copy()
+        _df = df.iloc[np.r_[0 : int(r / 2), -int(r / 2) : 0], :c]
     _df_numeric = _df.select_dtypes(include=np.number)
     column_format = {k: "{:0,.2f}" for k in _df_numeric.columns}
     return _df.style.format(column_format, na_rep=na_rep)
