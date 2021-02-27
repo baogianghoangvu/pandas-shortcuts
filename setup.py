@@ -51,7 +51,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
     ],
-    python_requires="<3.9",
+    python_requires=">=3.6",
     project_urls={
         "Bug Reports": f"{URL}/issues",
         "Source": URL,

@@ -3,10 +3,11 @@ import pandas as pd
 from dtale import show
 from pandas import DataFrame as D
 from pandas import Series as S
-from pandas_profiling import ProfileReport
+
+# from pandas_profiling import ProfileReport
 
 D.dt = show  # dtale.show
-D.pp = ProfileReport  # pandas_profiling.ProfileReport
+# D.pp = ProfileReport  # pandas_profiling.ProfileReport
 
 
 def _style_base(df, r=50, c=50, na_rep="-"):
