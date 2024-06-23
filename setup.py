@@ -34,7 +34,7 @@ URL = "https://github.com/baogianghoangvu/pandas-shortcuts"
 
 setup(
     name="pandas_shortcuts",
-    version="0.0.1",
+    version="0.1",
     description="Why even wait for autocompletion when you can use `pandas_shortcuts`?",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",

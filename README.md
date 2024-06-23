@@ -2,8 +2,8 @@
 
 [![.](https://img.shields.io/static/v1?logo=github&label=maintainer&message=baogianghoangvu&color=violet)](https://github.com/baogianghoangvu)
 
-[![.](https://img.shields.io/badge/version-0.0.1-informational)](https://github.com/baogianghoangvu/pandas-shortcuts/blob/main/pandas_shortcuts/__init__.py)
-[![.](https://img.shields.io/badge/python-3.8-important)](https://github.com/python/cpython)
+[![.](https://img.shields.io/badge/version-0.1-informational)](https://github.com/baogianghoangvu/pandas-shortcuts/blob/main/pandas_shortcuts/__init__.py)
+[![.](https://img.shields.io/badge/python-3.6-important)](https://github.com/python/cpython)
 [![.](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
 
 Why even wait for autocompletion when you can use `pandas_shortcuts`?
@@ -102,5 +102,4 @@ df.pp(...)
 
 ## Note
 
-- Some dependencies (`pandas_profiling`'s `numba` and `llvmlite`) do not support Python 3.9 as of `pandas_shortcuts` v0.0.1
 - `df.v()` directly generates `IPython.core.display.HTML` object under the hood, thus completely bypassing any `pd.set_option("display.max_rows", ...)` and `pd.set_option("display.max_columns", ...)` that the user may have specified.

@@ -1,13 +1,7 @@
 import numpy as np
 import pandas as pd
-from dtale import show
 from pandas import DataFrame as D
 from pandas import Series as S
-
-# from pandas_profiling import ProfileReport
-
-D.dt = show  # dtale.show
-# D.pp = ProfileReport  # pandas_profiling.ProfileReport
 
 
 def _style_base(df, r=50, c=50, na_rep="-"):
@@ -45,7 +39,6 @@ try:
             show_dimensions=True,
         )
         return HTML(html)
-
 
 except ModuleNotFoundError:
 
