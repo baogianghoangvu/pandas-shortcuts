@@ -1,4 +1,4 @@
-from pandas import DataFrame as D, DataFrameGroupBy as GB, Series as S
+from pandas import DataFrame as D, Series as S
 
 # Reindexing / selection / label manipulation
 
@@ -59,8 +59,8 @@ S.fna = S.fillna
 # Computations / descriptive stats
 D.desc = D.describe
 
-D.vc = D.values_count
-S.vc = S.values_count
+D.vc = D.cv = D.value_counts
+S.vc = S.cv = S.value_counts
 
 D.nu = D.nunique
 S.nu = S.nunique
@@ -100,7 +100,6 @@ D.md = D.to_markdown
 S.md = S.to_markdown
 
 D.parquet = D.to_parquet
-S.parquet = S.to_parquet
 
 D.xlsx = D.to_excel
 S.xlsx = S.to_excel

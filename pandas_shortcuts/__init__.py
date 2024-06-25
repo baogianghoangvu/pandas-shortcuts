@@ -3,4 +3,4 @@ __doc__ = """
     Why even wait for autocompletion when you can use `pandas_shortcuts`?
 """
 
-from . import *
+from . import methods, shortcuts_df_s, shortcuts_pd
