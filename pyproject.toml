@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pandas_shortcuts"
+description = "Why even wait for autocompletion when you can use `pandas_shortcuts`?"
+requires-python = ">=3.6"
+authors = [
+  {name = "BaoGiang HoangVu", email = "hoangvubaogiang@gmail.com"},
+  {name = "lpun-majessica", email = "nhi.lpu1205@gmail.com"},
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["shortcut", "pandas"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dynamic = [
+    "version",
+    "dependencies"
+]
+
+[project.urls]
+"Bug Reports" = "https://github.com/baogianghoangvu/pandas-shortcuts/issues"
+Source = "https://github.com/baogianghoangvu/pandas-shortcuts"
+
+[tool.setuptools.dynamic]
+version = {attr = "pandas_shortcuts.__version__"}
+dependencies = {file = "requirements.txt"}
