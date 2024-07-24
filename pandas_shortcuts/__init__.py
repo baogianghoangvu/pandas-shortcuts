@@ -1,6 +1,6 @@
-__version__ = "0.0.1"
+__version__ = "0.1"
 __doc__ = """
     Why even wait for autocompletion when you can use `pandas_shortcuts`?
 """
 
-from . import shortcuts, methods
+from . import dataframe_api, series_api, top_level_api
