@@ -1,0 +1,230 @@
+:root {
+    --blackish-purrp: #262026;
+    --darkest-purrp: #330d30;
+    --darker-purrp: #4F0A4A;
+    --base-purrp: #671b61;
+    --lighter-purrp: #7E327B;
+    --lightest-purrp: #c2a3bf;
+    --cream-yellow: #fffdd0;
+    --light-grey: #E0D8E0;
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: var(--cream-yellow)
+}
+
+html {
+    font-family: "Cascadia", Arial, Calibri, sans-serif;
+    font-size: 16px;
+}
+
+#navbar {
+    margin: 0;
+    width: 300px;
+    min-width: 290px;
+    background-color: var(--base-purrp);
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    overflow: auto;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.15rem;
+}
+
+#navbar ul li:hover {
+    cursor: pointer;
+    background-color: var(--lighter-purrp);
+    font-weight: bold;
+}
+
+#navbar ul li:active {
+    cursor: pointer;
+    background-color: var(--lightest-purrp);
+    font-weight: bold;
+}
+
+#navbar li a {
+    display: block;
+    text-decoration: none;
+    padding: 3% 7%;
+}
+
+.header {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: var(--darker-purrp);
+}
+
+.header p {
+    display: inline-block;
+}
+
+.header #github {
+    display: inline-block;
+    vertical-align: middle !important;
+    padding-left: 60px;
+    fill: var(--cream-yellow)
+}
+
+.header #github:hover {
+    fill: var(--lightest-purrp)
+}
+
+.header #github:active {
+    fill: var(--blackish-purrp)
+}
+
+#main-doc {
+    background-color: var(--darkest-purrp);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-left: 300px;
+    padding-top: 5px;
+    padding-bottom: 8%;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+hr {
+    border: 0.1px solid var(--cream-yellow);
+    color: var(--cream-yellow);
+}
+
+hr:last-of-type {
+    margin: 40px -20px 0 -20px
+}
+
+p,
+main li {
+    margin-top: 15px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+code {
+    font-family: "Consolas", 'Courier New', Courier, monospace;
+    background-color: var(--blackish-purrp);
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.code-block {
+    background-color: var(--blackish-purrp);
+    width: 90%;
+    max-width: 900px;
+    margin: 15px auto 35px auto;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1.5px solid var(--base-purrp);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.note {
+    color: var(--lightest-purrp);
+    font-style: italic;
+}
+
+.list-2 {
+    text-indent: 4rem;
+    list-style-type: circle;
+}
+
+.list-2 a:hover {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: var(--lighter-purrp);
+    border-radius: 2px;
+}
+
+.collapse-list-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+details>summary,
+a:hover {
+    cursor: pointer
+}
+
+details>summary {
+    display: block
+}
+
+details>summary {
+    list-style-type: none;
+    outline: none;
+    border-bottom: 1px solid var(--cream-yellow);
+    padding: 5px;
+}
+
+details>summary::before {
+    content: '+ ';
+}
+
+details[open]>summary::before {
+    content: '- ';
+}
+
+details[open]>summary {
+    margin-bottom: 0.5rem;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    max-width: 200px;
+    max-width: 200px;
+    max-height: 40px;
+    min-height: 40px;
+    background-color: var(--base-purrp);
+    border: 1px solid var(--light-grey);
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 1.05rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.back-to-top:hover {
+    cursor: pointer;
+    background-color: var(--lighter-purrp)
+}
+
+.back-to-top a {
+    text-decoration: none;
+    display: block;
+}
+
+.back-to-top:active {
+    background-color: var(--lightest-purrp);
+}
+
+footer {
+    font-size: 0.875rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--lightest-purrp)
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--lightest-purrp)
+}
